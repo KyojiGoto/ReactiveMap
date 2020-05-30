@@ -1,0 +1,17 @@
+.navbar{
+    z-index: 3;
+    width: 100vw;
+    position: relative;
+  }
+.logout{
+  border: 0;
+  background-color: transparent;
+  color: rgba(0,0,0,.5);
+  padding: 0;
+  display: flex;
+}
+.shft{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}

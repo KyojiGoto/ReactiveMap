@@ -1,0 +1,130 @@
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+.filter-toggler{
+    width: 25vw;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.filters{
+    height: 100%;
+    display: flex;
+    background-color: rgba(189, 189, 189, 0.781);
+    justify-content: center;
+}
+.controlsLeft{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    padding-right: 5%;
+    row-gap: 4%; 
+}
+.controlsRight{
+    width: 100%;
+    height: 100%;
+}
+.custbut{
+    width: 100%;
+    padding: 5%;
+    
+}
+
+.locnav{
+    height: 100%;
+    background-color: none;
+}
+.loctable{
+    /* height: 60vh; */
+    height: calc(60vh - 2em);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.overlay-container{ 
+    width: 25vw;
+    height: 100%;
+}
+.locs{
+    position: relative;
+    height: 100%;
+}
+.tabloc{
+    width: 70%;
+}
+.tabstat{
+    width: 30%;
+    padding-left: 3%;
+    text-align: center;
+}
+.locbutt{
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: 0;
+    padding-top: 2px;
+}
+.locbutt:hover{
+    background: rgba(189, 189, 189, 0.301);
+}
+.locbutt:focus{
+    background: rgba(189, 189, 189, 0.301);
+}
+.clr{
+    text-align: center;
+}
+.allFilters{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0;
+    padding: 2%;
+}
+.resetButt{
+    height: 60%;
+    padding: 2%;
+}
+.reset{
+    background-color: #6c757d;
+    border-color: #5a6268;
+    color: white;
+}
+.reset:hover{
+    background-color: #5a6268;
+    border-color: #6c757d;
+}
+.reset:focus{
+    color: white;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .filter-toggler{
+        width: 100vw;
+    }
+    
+    .loctable{
+        overflow-y: scroll;
+        width: 100vw;
+        height: 15vh;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .overlay-container{
+        width: 100vw;
+        height: fit-content;
+    }
+    .clr{
+        background-color: rgba(255, 255, 255, 0.6);
+        width: 100%;
+    }
+    .locnav{
+        height: fit-content;
+    }
+    .bg{
+        height: 0vh;
+    }
+    #allControls{
+        display: none;
+    }
+    #locationsNav{
+        display: none;
+    }
+  }

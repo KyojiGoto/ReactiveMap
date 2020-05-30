@@ -1,0 +1,38 @@
+.nav-style{
+    position: relative!important;
+    z-index: 3!important;
+}
+#map-style{
+    position: absolute!important;
+    z-index: -5!important;
+    top:0!important;
+    width: 100%!important;
+    height: 100%!important;
+}
+.overlap{
+    z-index: 3!important;
+    width: 25vw!important;
+    position: fixed!important;
+    opacity: 100%!important;
+  }
+.bgcolor{
+    height: 100vh!important;
+    width: 25vw!important;
+    position: absolute!important;
+    z-index: 0!important;
+    background-color: rgba(255, 255, 255, 0.6)!important;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .overlap{
+        width: 100vw!important;
+        height: fit-content!important;
+    }
+    .bgcolor{
+        width: 100vw!important;
+        height: 25vh!important;
+        opacity: 0%!important;
+        position: absolute!important;
+        z-index: -10!important;
+    }
+  }

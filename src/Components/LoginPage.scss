@@ -1,0 +1,74 @@
+.loginPage{
+    background-color: white;
+}
+
+.pageWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "info info Login Login" "info info Login Login" "Bottom Bottom Bottom Bottom";
+}
+
+.loginform{
+    justify-self: center;
+    align-self: center;
+    grid-area: Login;
+  }
+.login{
+    font-size: 30px;
+}
+.form{
+    min-width:200px;
+    max-width:300px;
+}
+.info{
+    width: 90%;
+    padding: 10%;
+    justify-self: center;
+    align-self: center;
+    grid-area: info;
+    border-left: 20px;
+    border-color: black;
+
+}
+.bottomScreen{
+    /* position: fixed;
+    z-index: -1; */
+    grid-area: Bottom;
+    background-color: white;
+    
+}
+.messageWrapper{
+    text-align: center
+}
+.warning{
+    display: inline-block;
+    color: red;
+}
+.success{
+    display: inline-block;
+    color: green;
+}
+@media only screen and (max-width: 768px) {
+    
+    .pageWrapper{
+        overflow: scroll;
+        max-height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "Login Login Login Login" "Login Login Login Login" "info info info info";
+    }
+          
+    .Login { 
+        grid-area: Login; 
+        align-self: baseline;
+        margin:0;
+        justify-self: baseline;
+    }
+    
+    .info { grid-area: info; }
+}
+    
