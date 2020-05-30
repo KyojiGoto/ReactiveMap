@@ -1,4 +1,4 @@
-React Map App with leaflet
+## React Map App with Leaflet
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
